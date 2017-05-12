@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue Version</title>
+</head>
+
+<body>
+  <div id="app">
+    <version></version>
+  </div>
+
+  <script src="https://unpkg.com/vue@2.3.3/dist/vue.js"></script>
+  <script src="./dist/cdn/vue-version.min.js"></script>
+  <script type="text/javascript">
+  new Vue({
+    el: "#app",
+    components: {
+      'version': VueVersion.default
+    }
+  });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+{
+  "name": "vue-version",
+  "version": "1.0.0",
+  "description": "Display's the version of Vue.js",
+  "main": "dist/vue-version.min.js",
+  "scripts": {
+    "test": "karma start",
+    "test:watch": "karma start --single-run=false",
+    "lint": "eslint src --ext=js,vue || exit 0",
+    "dev": "webpack-dev-server --content-base ./dev --env=webpack.dev --open --hot",
+    "dist": "webpack --env=webpack.dist",
+    "cdn": "webpack --env=webpack.cdn",
+    "build": "npm-run-all --parallel dist cdn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vuetiful-blog/vue-version.git"
+  },
+  "keywords": [
+    "version",
+    "vue"
+  ],
+  "author": "Craig Humphreys",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vuetiful-blog/vue-version/issues"
+  },
+  "homepage": "https://github.com/vuetiful-blog/vue-version#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "css-loader": "^0.28.1",
+    "jasmine-core": "^2.6.1",
+    "karma": "^1.7.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-spec-reporter": "0.0.31",
+    "karma-webpack": "^2.0.3",
+    "npm-run-all": "^4.0.2",
+    "vue": "^2.3.3",
+    "vue-loader": "^12.0.3",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
