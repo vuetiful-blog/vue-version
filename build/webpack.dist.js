@@ -11,9 +11,8 @@ module.exports = {
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
-  resolve:{},
   externals: {
-    "vue": "vue"
+    "vue": "Vue"
   },
   module: {
     rules: [{
